@@ -2,5 +2,5 @@
   <nav></nav>
   <summary [timePeriod]="timePeriod" [summaryAmount]="summaryAmount"></summary>
   <chart [Accounts]="mockData"></chart>
-  <transactions></transactions>
+  <transactions [transactions]="mockData[0].Transactions"></transactions>
 </div>

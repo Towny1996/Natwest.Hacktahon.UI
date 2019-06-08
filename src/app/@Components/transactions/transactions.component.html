@@ -1,1 +1,4 @@
-TRANSACTIONS HERE
+<div class="transaction-row" *ngFor="let trans of weekTransactions">
+  <span class="transaction-date">{{ formatDate(trans.Date) }}</span>
+  <span class="transaction-fees"> Fees: £{{ trans.Fee }}</span>
+</div>
