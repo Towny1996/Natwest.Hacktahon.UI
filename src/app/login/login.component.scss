@@ -5,27 +5,37 @@
   width: 100%;
 
   .login-form {
-    background-color: white;
+    border-radius: 20px;
+    background-color: #5da9e9;
+    box-shadow: 5px 10px;
     display: flex;
     flex-direction: column;
-    width: 163px;
+    width: 500px;
     margin: auto;
     margin-top: 200px;
-    // border: 2px solid green;
 
     h1 {
+      margin-top: 20px;
       text-align: center;
-      border-bottom: 2px solid salmon;
     }
 
     input {
-      margin: 5px;
+      margin: 5px auto;
+      width: 300px;
       border: none;
       border-bottom: 1px solid black;
+      padding: 7px;
     }
 
     .submit-button {
+      background-color: whitesmoke;
       border-bottom: none;
+      margin-bottom: 20px;
+    }
+
+    .submit-button:hover {
+      background-color: grey;
+      transition: background-color 2s ease-out;
     }
   }
 }
