@@ -1,10 +1,19 @@
-<div style="display: block; width: 40%; margin: auto; margin-top: 70px;">
-    <canvas baseChart
-        [chartType]="'line'"
-        [datasets]="chartData"
-        [labels]="chartLabels"
-        [options]="chartOptions"
-        [legend]="true">
-    </canvas>
+<div class="chart">
+    <div class="chart__account_select">
+        <div *ngFor="let account of Accounts">
+            {{account.Name}}
+        </div>
+    </div>
+
+    <div class="chart__holder">
+        <canvas baseChart
+            [chartType]="'line'"
+            [datasets]="chartData"
+            [labels]="chartLabels"
+            [options]="chartOptions"
+            [legend]="true">
+        </canvas>
+    </div>
 </div>
+
 

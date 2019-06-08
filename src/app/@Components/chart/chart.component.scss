@@ -1,0 +1,17 @@
+.chart{
+    margin-top: 70px;
+
+    &__holder {
+        display: block; 
+        width: 40%; 
+        margin: auto; 
+    }
+
+    &__account_select {
+        width: 40%;
+        margin: auto;
+        background-color: #5da9e9;
+        color: white;
+        padding: 10px;
+    }
+}
