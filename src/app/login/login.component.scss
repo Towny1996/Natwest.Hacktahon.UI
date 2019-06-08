@@ -7,12 +7,15 @@
   .login-form {
     border-radius: 20px;
     background-color: #5da9e9;
-    box-shadow: 5px 10px;
     display: flex;
     flex-direction: column;
     width: 500px;
     margin: auto;
     margin-top: 200px;
+
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(143, 130, 143, 1);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(143, 130, 143, 1);
+    box-shadow: 3px 3px 5px 0px rgba(143, 130, 143, 1);
 
     h1 {
       margin-top: 20px;

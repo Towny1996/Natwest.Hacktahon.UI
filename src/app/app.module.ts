@@ -1,17 +1,18 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
-import { RouterModule, Routes } from '@angular/router';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { NavComponent } from './@Components/nav/nav.component';
+import { AppRoutingModule } from "./app-routing.module";
+import { AppComponent } from "./app.component";
+import { LoginComponent } from "./login/login.component";
+import { RouterModule, Routes } from "@angular/router";
+import { DashboardComponent } from "./dashboard/dashboard.component";
+import { NavComponent } from "./@Components/nav/nav.component";
+import { SummaryComponent } from "./@Components/summary/summary.component";
 
 const routes: Routes = [
- { path: '', redirectTo: '/login', pathMatch: 'full'},
- { path: 'login', component: LoginComponent },
- { path: 'dashboard', component: DashboardComponent }
+  { path: "", redirectTo: "/login", pathMatch: "full" },
+  { path: "login", component: LoginComponent },
+  { path: "dashboard", component: DashboardComponent }
 ];
 
 @NgModule({
@@ -19,14 +20,11 @@ const routes: Routes = [
     AppComponent,
     LoginComponent,
     DashboardComponent,
-    NavComponent
+    NavComponent,
+    SummaryComponent
   ],
-  imports: [
-    RouterModule.forRoot(routes),
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [RouterModule.forRoot(routes), BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
