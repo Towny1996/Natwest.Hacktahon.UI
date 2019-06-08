@@ -1,0 +1,31 @@
+.login-page {
+  font-family: arial;
+  display: block;
+  height: 1000px;
+  width: 100%;
+
+  .login-form {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 163px;
+    margin: auto;
+    margin-top: 200px;
+    // border: 2px solid green;
+
+    h1 {
+      text-align: center;
+      border-bottom: 2px solid salmon;
+    }
+
+    input {
+      margin: 5px;
+      border: none;
+      border-bottom: 1px solid black;
+    }
+
+    .submit-button {
+      border-bottom: none;
+    }
+  }
+}
