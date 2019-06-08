@@ -13,6 +13,7 @@ import { SummaryComponent } from "./@Components/summary/summary.component";
 import { CompareComponent } from "./compare/compare.component";
 import { MarketplaceComponent } from "./marketplace/marketplace.component";
 import { SwitchComponent } from "./switch/switch.component";
+import { TransactionsComponent } from "./@Components/transactions/transactions.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "/login", pathMatch: "full" },
@@ -33,7 +34,8 @@ const routes: Routes = [
     NavComponent,
     CompareComponent,
     MarketplaceComponent,
-    SwitchComponent
+    SwitchComponent,
+    TransactionsComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
