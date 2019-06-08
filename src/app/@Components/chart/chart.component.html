@@ -1,17 +1,18 @@
 <div class="chart">
     <div class="chart__account_select">
-        <div *ngFor="let account of Accounts">
-            {{account.Name}}
+        <div class="chart__account_view" *ngFor="let account of GetUniqueBanks()">
+            {{account}}
         </div>
     </div>
 
     <div class="chart__holder">
         <canvas baseChart
-            [chartType]="'line'"
+            [chartType]="'bar'"
             [datasets]="chartData"
             [labels]="chartLabels"
             [options]="chartOptions"
-            [legend]="true">
+            [legend]="true"
+            [colors]="chartColors">
         </canvas>
     </div>
 </div>
