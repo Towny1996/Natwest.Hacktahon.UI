@@ -3,7 +3,6 @@ header {
   ul {
     font-weight: bold;
     list-style-type: none;
-    width: 50%;
     margin: auto;
     padding: 0;
     overflow: hidden;
@@ -11,11 +10,8 @@ header {
   }
 
   li {
-    flex: 1;
     float: left;
-    display: block;
     color: white;
-    text-align: center;
     padding: 16px;
     text-decoration: none;
   }
