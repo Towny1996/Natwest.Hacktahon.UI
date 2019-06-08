@@ -1,4 +1,14 @@
-<div class="transaction-row" *ngFor="let trans of weekTransactions">
-  <span class="transaction-date">{{ formatDate(trans.Date) }}</span>
-  <span class="transaction-fees"> Fees: £{{ trans.Fee }}</span>
+<div *ngFor="let transDay of transactionItems">
+  <div
+    (click)="showDay(transDay.Day)"
+    class="transaction-row"
+    *ngIf="transDay.Amount"
+  >
+    {{ transDay.Day }} Amount: {{ transDay.Amount }}
+    <div *ngIf="detailDays[transDay.Day]">
+      <div *ngFor="let trans of transDay.Transactions">
+        {{ trans.Amount }}
+      </div>
+    </div>
+  </div>
 </div>

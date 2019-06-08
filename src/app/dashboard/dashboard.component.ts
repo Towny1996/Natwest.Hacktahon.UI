@@ -1,9 +1,9 @@
 import { Component, OnInit, ModuleWithComponentFactories } from "@angular/core";
-import { Account } from '../@Models/account.model';
-import { Transaction } from '../@Models/transaction.model';
-import { TransactionType } from '../@Enums/transaction-type.enum';
-import * as moment from 'moment';
-import { ChartFilterType } from '../@Enums/chart-filter-type.enum';
+import { Account } from "../@Models/account.model";
+import { Transaction } from "../@Models/transaction.model";
+import { TransactionType } from "../@Enums/transaction-type.enum";
+import * as moment from "moment";
+import { ChartFilterType } from "../@Enums/chart-filter-type.enum";
 
 @Component({
   selector: "app-dashboard",
@@ -11,7 +11,6 @@ import { ChartFilterType } from '../@Enums/chart-filter-type.enum';
   styleUrls: ["./dashboard.component.scss"]
 })
 export class DashboardComponent implements OnInit {
-
   selectedFormat: ChartFilterType;
   summaryAmount: string = "£600";
   timePeriod: string = "week";
@@ -64,11 +63,35 @@ export class DashboardComponent implements OnInit {
       .subtract(5, "day")
       .toDate();
 
-    const Transaction6 = new Transaction;
+    const Transaction14 = new Transaction();
+    Transaction5.Amount = 120;
+    Transaction5.Fee = 10;
+    Transaction5.Type = TransactionType.Debit;
+    Transaction5.Date = moment(new Date())
+      .subtract(4, "day")
+      .toDate();
+
+    const Transaction6 = new Transaction();
     Transaction6.Amount = 65;
     Transaction6.Fee = 6;
     Transaction6.Type = TransactionType.Debit;
     Transaction6.Date = new Date();
+
+    const Transaction7 = new Transaction();
+    Transaction7.Amount = 100;
+    Transaction7.Fee = 10;
+    Transaction7.Type = TransactionType.Debit;
+    Transaction7.Date = moment(new Date())
+      .subtract(2, "day")
+      .toDate();
+
+    const Transaction8 = new Transaction();
+    Transaction8.Amount = 120;
+    Transaction8.Fee = 10;
+    Transaction8.Type = TransactionType.Debit;
+    Transaction8.Date = moment(new Date())
+      .subtract(2, "day")
+      .toDate();
 
     Account1.Transactions.push(Transaction1);
     Account1.Transactions.push(Transaction2);
@@ -76,6 +99,8 @@ export class DashboardComponent implements OnInit {
     Account1.Transactions.push(Transaction4);
     Account1.Transactions.push(Transaction5);
     Account1.Transactions.push(Transaction6);
+    Account1.Transactions.push(Transaction7);
+    Account1.Transactions.push(Transaction8);
 
     this.mockData.push(Account1);
   }
