@@ -1,5 +1,14 @@
 <div class="summary-container">
   <h1>Summary</h1>
-  <p>Transactions: {{ summaryAmount }}</p>
-  <p>Fees: {{ summaryAmount }}</p>
+  <h2>Last {{ timePeriod }}</h2>
+
+  <div class="summary-amount">
+    <span class="summary-label">Transactions: </span>
+    <span class="amount-good"> {{ summaryAmount }}</span>
+  </div>
+  <div class="summary-amount">
+    <span class="summary-label">Fees: </span>
+    <span class="amount-bad">{{ summaryAmount }}</span>
+  </div>
+  <button class="summary-compare">Compare</button>
 </div>

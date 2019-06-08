@@ -9,11 +9,17 @@ import { DashboardComponent } from "./dashboard/dashboard.component";
 import { NavComponent } from "./@Components/nav/nav.component";
 import { ChartComponent } from "./@Components/chart/chart.component";
 import { SummaryComponent } from "./@Components/summary/summary.component";
+import { CompareComponent } from "./compare/compare.component";
+import { MarketplaceComponent } from "./marketplace/marketplace.component";
+import { SwitchComponent } from "./switch/switch.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "/login", pathMatch: "full" },
   { path: "login", component: LoginComponent },
-  { path: "dashboard", component: DashboardComponent }
+  { path: "dashboard", component: DashboardComponent },
+  { path: "compare", component: CompareComponent },
+  { path: "marketplace", component: MarketplaceComponent },
+  { path: "switch", component: SwitchComponent }
 ];
 
 @NgModule({
@@ -23,7 +29,10 @@ const routes: Routes = [
     DashboardComponent,
     SummaryComponent,
     ChartComponent,
-    NavComponent
+    NavComponent,
+    CompareComponent,
+    MarketplaceComponent,
+    SwitchComponent
   ],
   imports: [
     RouterModule.forRoot(routes),

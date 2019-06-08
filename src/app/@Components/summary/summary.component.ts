@@ -9,5 +9,6 @@ export class SummaryComponent implements OnInit {
   constructor() {}
 
   @Input() summaryAmount: string;
+  @Input() timePeriod: string;
   ngOnInit() {}
 }

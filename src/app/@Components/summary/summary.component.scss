@@ -1,6 +1,6 @@
 .summary-container {
   border-radius: 20px;
-  background-color: #5da9e9;
+  background-color: white;
   display: flex;
   flex-direction: column;
   margin-top: 100px;
@@ -10,5 +10,27 @@
   float: right;
   margin-right: 50px;
   padding: 15px;
-  color: white;
+  color: black;
+  font-size: 20px;
+
+  .amount-good {
+    color: green;
+  }
+  .amount-bad {
+    color: red;
+  }
+
+  .summary-compare {
+    margin: 10px;
+    background-color: #5da9e9;
+    border: none;
+    color: white;
+    font-size: 20px;
+  }
+
+  .summary-compare:hover {
+    background-color: #1f89e0;
+    transition: background-color 0.5s ease-out;
+    cursor: pointer;
+  }
 }
