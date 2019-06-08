@@ -64,6 +64,7 @@ export class ChartComponent implements OnInit {
           while (startingDate.getDate() != new Date().getDate()) {
             var amt = this.Transactions.filter(x => (x.Date.getDate() == startingDate.getDate() && x.Account === this.selectedAccount)).reduce((x, y) => x += (y.FeeType === FeeType.TRF ? 0.50 : 0.70) , 0);
             data.data.push(amt);
+            
             startingDate = moment(startingDate).add(1, "day").toDate();
           }
     }

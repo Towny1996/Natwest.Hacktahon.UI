@@ -1,9 +1,9 @@
 import { Component, OnInit, ModuleWithComponentFactories } from "@angular/core";
-import { Transaction } from "../@Models/transaction.model";
-import { ChartFilterType } from "../@Enums/chart-filter-type.enum";
-import * as moment from "moment";
-import { FeeType } from "../@Enums/fee-type.enum";
-import { TransactionType } from "../@Enums/transaction-type.enum";
+import { Transaction } from '../@Models/transaction.model';
+import { ChartFilterType } from '../@Enums/chart-filter-type.enum';
+import * as moment from 'moment';
+import { FeeType } from '../@Enums/fee-type.enum';
+import { TransactionType } from '../@Enums/transaction-type.enum';
 
 @Component({
   selector: "app-dashboard",
@@ -14,86 +14,131 @@ export class DashboardComponent implements OnInit {
   selectedFormat: ChartFilterType;
   summaryAmount: string = "£600";
   timePeriod: string = "week";
+
+  crapData = [
+    ["2019-06-01T02:59:43.1Z", "Dbit",100.00, "TRF","Account1", false,""],
+    ["2019-06-01T02:59:43.1Z", "Dbit",100.00, "TRF","Account1", true,"FEE DR"],
+
+    ["2019-05-01T02:59:43.1Z", "CRDT",100.00, "TRF","Account1", false,"",""],
+    ["2019-05-01T02:59:43.1Z", "DBIT",100.00, "TRF","Account1", true,"FEE CR"],
+
+    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "IPO","Account1", false,""],
+    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "IPO","Account1", true,"FEE DR"],
+
+    ["2019-05-01T02:59:43.1Z", "CRDT",100.00, "IPO","Account1", false,""],
+    ["2019-05-01T02:59:43.1Z", "DBIT",100.00, "IPO","Account1", true,"FEE CR"],
+
+    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "PAY","Account1", false,""],
+    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "PAY","Account1", true,"FEE DR"],
+
+    ["2019-05-01T02:59:43.1Z", "CRDT",100.00, "PAY","Account1", false,""],
+    ["2019-05-01T02:59:43.1Z", "DBIT",100.00, "PAY","Account1", true,"FEE CR"],
+
+    ["2019-05-01T02:59:43.1Z", "DBIT",100.00, "1855","Account1", false,""],
+    ["2019-05-01T02:59:43.1Z", "DBIT",100.00, "1855","Account1", true,"FEE DR"],
+
+    ["2019-06-01T02:59:43.1Z", "CRDT",100.00, "1855","Account1", false,""],
+    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "1855","Account1", true,"FEE CR"],
+
+    ["2019-05-01T02:59:43.1Z", "DBIT",100.00, "SPIT","Account1", false,""],
+    ["2019-05-01T02:59:43.1Z", "DBIT",100.00, "SPIT","Account1", true,"FEE DR"],
+
+    ["2019-05-01T02:59:43.1Z", "CRDT",100.00, "SPIT","Account1", false,""],
+    ["2019-05-01T02:59:43.1Z", "DBIT",100.00, "SPIT","Account1", true,"FEE CR"],
+
+    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "MMD","Account1", false,""],
+    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "MMD","Account1", true,"FEE DR"],
+
+    ["2019-06-01T02:59:43.1Z", "CRDT",100.00, "MMD","Account1", false,""],
+    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "MMD","Account1", true,"FEE CR"],
+
+    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "SPIN","Account1", false,""],
+    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "SPIN","Account1", true,"FEE DR"],
+
+    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "SPIN","Account1", false,""],
+    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "SPIN","Account1", true,"FEE CR"],
+
+    ["2019-05-01T02:59:43.1Z", "DBIT",100.00, "SPOU","Account1", false,""],
+    ["2019-05-01T02:59:43.1Z", "DBIT",100.00, "SPOU","Account1", true,"FEE DR"],
+
+    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "SPOU","Account1", false,""],
+    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "SPOU","Account1", true,"FEE CR"],
+
+    ["2019-06-01T02:59:43.1Z", "DBIT",8.00, "","Account1", true,"A/C FEE"],
+    ["2019-06-01T02:59:43.1Z", "DBIT",44.17, "","Account1", true,"INT CR"],
+    ["2019-06-01T02:59:43.1Z", "DBIT",160.71, "","Account1", true,"INT DR"],
+
+    ["2019-05-01T02:59:43.1Z", "Dbit",100.00, "TRF","Account1", false,""],
+    ["2019-05-01T02:59:43.1Z", "Dbit",100.00, "TRF","Account1", true,"FEE DR"],
+
+    ["2019-05-01T02:59:43.1Z", "CRDT",100.00, "TRF","Account2", false,"",""],
+    ["2019-05-01T02:59:43.1Z", "DBIT",100.00, "TRF","Account2", true,"FEE CR"],
+
+    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "IPO","Account2", false,""],
+    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "IPO","Account2", true,"FEE DR"],
+
+    ["2019-06-01T02:59:43.1Z", "CRDT",100.00, "IPO","Account2", false,""],
+    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "IPO","Account2", true,"FEE CR"],
+
+    ["2019-05-01T02:59:43.1Z", "DBIT",100.00, "PAY","Account2", false,""],
+    ["2019-05-01T02:59:43.1Z", "DBIT",100.00, "PAY","Account2", true,"FEE DR"],
+
+    ["2019-06-01T02:59:43.1Z", "CRDT",100.00, "PAY","Account2", false,""],
+    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "PAY","Account2", true,"FEE CR"],
+
+    ["2019-05-01T02:59:43.1Z", "DBIT",100.00, "1855","Account2", false,""],
+    ["2019-05-01T02:59:43.1Z", "DBIT",100.00, "1855","Account2", true,"FEE DR"],
+
+    ["2019-06-01T02:59:43.1Z", "CRDT",100.00, "1855","Account2", false,""],
+    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "1855","Account2", true,"FEE CR"],
+
+    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "SPIT","Account2", false,""],
+    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "SPIT","Account2", true,"FEE DR"],
+
+    ["2019-05-01T02:59:43.1Z", "CRDT",100.00, "SPIT","Account2", false,""],
+    ["2019-05-01T02:59:43.1Z", "DBIT",100.00, "SPIT","Account2", true,"FEE CR"],
+
+    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "MMD","Account2", false,""],
+    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "MMD","Account2", true,"FEE DR"],
+
+    ["2019-05-01T02:59:43.1Z", "CRDT",100.00, "MMD","Account2", false,""],
+    ["2019-05-01T02:59:43.1Z", "DBIT",100.00, "MMD","Account2", true,"FEE CR"],
+
+    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "SPIN","Account2", false,""],
+    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "SPIN","Account2", true,"FEE DR"],
+
+    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "SPIN","Account2", false,""],
+    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "SPIN","Account2", true,"FEE CR"],
+
+    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "SPOU","Account2", false,""],
+    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "SPOU","Account2", true,"FEE DR"],
+
+    ["2019-05-01T02:59:43.1Z", "DBIT",100.00, "SPOU","Account2", false,""],
+    ["2019-05-01T02:59:43.1Z", "DBIT",100.00, "SPOU","Account2", true,"FEE CR"],
+
+    ["2019-06-01T02:59:43.1Z", "DBIT",12.00, "","Account2", true,"A/C FEE"],
+    ["2019-06-01T02:59:43.1Z", "DBIT",17.17, "","Account2", true,"INT CR"],
+    ["2019-06-01T02:59:43.1Z", "DBIT",19.71, "","Account2", true,"INT DR"]]
   mockData: Transaction[] = [];
 
   constructor() {}
 
   ngOnInit() {
-    const transaction1 = new Transaction();
-    transaction1.AMT = 1000;
-    transaction1.Account = "Natwest Business Account";
-    transaction1.Date = moment(new Date())
-      .subtract(7, "day")
-      .toDate();
-    transaction1.FeeType = FeeType.TRF;
-    transaction1.PaymentType = TransactionType.Debit;
+    this.MapMockData();
+  }
 
-    this.mockData.push(transaction1);
+  MapMockData() {
+    this.crapData.forEach(x => {
+      const tran = new Transaction;
+      tran.Date = moment(x[0].toString()).toDate();
+      tran.PaymentType = ([1].toString() === "Dbit" ? TransactionType.Debit : TransactionType.Credit);
+      tran.AMT = parseInt(x[2].toString());
+      tran.FeeType = (x[3] === "TRF" ? FeeType.TRF : FeeType.IPO);
+      tran.Account = [4].toString();
 
-    const transaction2 = new Transaction();
-    transaction2.AMT = 1000;
-    transaction2.Account = "Natwest Business Account";
-    transaction2.Date = moment(new Date())
-      .subtract(6, "day")
-      .toDate();
-    transaction2.FeeType = FeeType.TRF;
-    transaction2.PaymentType = TransactionType.Debit;
+      this.mockData.push(tran);
+    });      
 
-    this.mockData.push(transaction2);
-
-    const transaction3 = new Transaction();
-    transaction3.AMT = 10000;
-    transaction3.Account = "Natwest Premium Account";
-    transaction3.Date = moment(new Date())
-      .subtract(5, "day")
-      .toDate();
-    transaction3.FeeType = FeeType.TRF;
-    transaction3.PaymentType = TransactionType.Debit;
-
-    this.mockData.push(transaction3);
-
-    const transaction4 = new Transaction();
-    transaction4.AMT = 3400;
-    transaction4.Account = "Natwest Premium Account";
-    transaction4.Date = moment(new Date())
-      .subtract(4, "day")
-      .toDate();
-    transaction4.FeeType = FeeType.TRF;
-    transaction4.PaymentType = TransactionType.Debit;
-
-    this.mockData.push(transaction4);
-
-    const transaction5 = new Transaction();
-    transaction5.AMT = 2200;
-    transaction5.Account = "Natwest Premium Account";
-    transaction5.Date = moment(new Date())
-      .subtract(3, "day")
-      .toDate();
-    transaction5.FeeType = FeeType.TRF;
-    transaction5.PaymentType = TransactionType.Debit;
-
-    this.mockData.push(transaction5);
-
-    const transaction6 = new Transaction();
-    transaction6.AMT = 100;
-    transaction6.Account = "Natwest Business Account";
-    transaction6.Date = moment(new Date())
-      .subtract(2, "day")
-      .toDate();
-    transaction6.FeeType = FeeType.TRF;
-    transaction6.PaymentType = TransactionType.Debit;
-
-    this.mockData.push(transaction6);
-
-    const transaction7 = new Transaction();
-    transaction7.AMT = 5600;
-    transaction7.Account = "Natwest Business Account";
-    transaction7.Date = moment(new Date())
-      .subtract(1, "day")
-      .toDate();
-    transaction7.FeeType = FeeType.TRF;
-    transaction7.PaymentType = TransactionType.Debit;
-
-    this.mockData.push(transaction7);
+    console.log(this.mockData);
   }
 }
