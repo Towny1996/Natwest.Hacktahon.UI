@@ -9,10 +9,12 @@
     }}
     <div *ngIf="detailDays[transItem.Day]">
       <div class="transaction-row" *ngFor="let trans of transItem.Transactions">
-        <div class="transaction-type">{{ TransactionType[trans.Type] }}</div>
+        <div class="transaction-type">
+          {{ TransactionType[trans.PaymentType] }}
+        </div>
         <div class="amount-fee">
-          <div class="transaction-amount">Transaction £{{ trans.Amount }}</div>
-          <div class="transaction-fee">Fee £{{ trans.Amount }}</div>
+          <div class="transaction-amount">Transaction £{{ trans.AMT }}</div>
+          <div class="transaction-fee">Fee £{{ trans.Fee }}</div>
         </div>
       </div>
     </div>

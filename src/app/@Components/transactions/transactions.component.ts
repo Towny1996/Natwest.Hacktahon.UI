@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
 import { Transaction } from "src/app/@Models/transaction.model";
 import * as moment from "moment";
 import { TransactionItem } from "src/app/@Models/transaction-item.model";
@@ -38,7 +38,7 @@ export class TransactionsComponent implements OnInit {
       );
 
       item.Amount = item.Transactions.reduce((acc, currentValue) => {
-        return (acc += currentValue.Amount);
+        return (acc += currentValue.AMT);
       }, 0);
 
       this.transactionItems.push(item);

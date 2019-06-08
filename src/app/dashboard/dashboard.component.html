@@ -1,6 +1,9 @@
 <div class="dashboard">
   <nav></nav>
   <summary [timePeriod]="timePeriod" [summaryAmount]="summaryAmount"></summary>
-  <chart [Transactions]="mockData" (selectedFormat)="selectedFormat = $event"></chart>
-  <transactions [transactions]="mockData[0].Transactions"></transactions>
+  <chart
+    [Transactions]="mockData"
+    (selectedFormat)="selectedFormat = $event"
+  ></chart>
+  <transactions [transactions]="mockData"></transactions>
 </div>
