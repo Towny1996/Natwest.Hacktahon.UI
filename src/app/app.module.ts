@@ -5,16 +5,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RouterModule, Routes } from '@angular/router';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
  { path: '', redirectTo: '/login', pathMatch: 'full'},
- { path: 'login', component: LoginComponent }
+ { path: 'login', component: LoginComponent },
+ { path: 'dashboard', component: DashboardComponent }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    DashboardComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
