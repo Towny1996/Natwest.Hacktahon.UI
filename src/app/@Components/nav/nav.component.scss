@@ -1,26 +1,28 @@
 header {
-  background-color: #333333;
-    ul {
-        list-style-type: none;
-        width: 50%;
-        margin: auto;
-        padding: 0;
-        overflow: hidden;
-        display: flex;
-      }
-      
-      li {
-        flex: 1;
-        float: left;
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 16px;
-        text-decoration: none;
-      }
+  background-color: #5da9e9;
+  ul {
+    font-weight: bold;
+    list-style-type: none;
+    width: 50%;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+  }
 
-      li:hover {
-        background-color: #111111;
-        cursor: pointer;
-      }
+  li {
+    flex: 1;
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+
+  li:hover {
+    color: lightgray;
+    transition: color 0.5s ease-out;
+    cursor: pointer;
+  }
 }
