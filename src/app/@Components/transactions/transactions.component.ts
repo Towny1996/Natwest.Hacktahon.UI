@@ -2,6 +2,7 @@ import { Component, OnInit, Input, Output } from "@angular/core";
 import { Transaction } from "src/app/@Models/transaction.model";
 import * as moment from "moment";
 import { TransactionItem } from "src/app/@Models/transaction-item.model";
+import { TransactionType } from "src/app/@Enums/transaction-type.enum";
 
 @Component({
   selector: "transactions",
@@ -21,6 +22,7 @@ export class TransactionsComponent implements OnInit {
     Saturday: false,
     Sunday: false
   };
+  TransactionType = TransactionType;
 
   createTransactionObject() {
     let sevenDaysAgo = moment(new Date())
@@ -56,6 +58,6 @@ export class TransactionsComponent implements OnInit {
   }
 
   formatDate(date) {
-    return moment(date).format("dddd");
+    return moment(date).format("dddd Do MMMM");
   }
 }

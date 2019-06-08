@@ -1,5 +1,25 @@
-.transaction-row {
-  border: 2px solid brown;
-  width: 40%;
-  margin: auto;
+.transaction-container {
+  .transaction-day {
+    border-bottom: 2px solid lightgrey;
+    width: 40%;
+    margin: auto;
+
+    .transaction-row {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+
+      border-bottom: 2px solid blue;
+
+      .transaction-type {
+      }
+
+      .amount-fee {
+        .transaction-amount {
+        }
+
+        .transaction-fee {
+        }
+      }
+    }
+  }
 }

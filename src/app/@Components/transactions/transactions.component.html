@@ -1,13 +1,19 @@
-<div *ngFor="let transDay of transactionItems">
+<div class="transaction-container" *ngFor="let transItem of transactionItems">
   <div
-    (click)="showDay(transDay.Day)"
-    class="transaction-row"
-    *ngIf="transDay.Amount"
+    (click)="showDay(transItem.Day)"
+    class="transaction-day"
+    *ngIf="transItem.Amount"
   >
-    {{ transDay.Day }} Amount: {{ transDay.Amount }}
-    <div *ngIf="detailDays[transDay.Day]">
-      <div *ngFor="let trans of transDay.Transactions">
-        {{ trans.Amount }}
+    {{ formatDate(transItem.Transactions[0].Date) }} Transaction Amounted £{{
+      transItem.Amount
+    }}
+    <div *ngIf="detailDays[transItem.Day]">
+      <div class="transaction-row" *ngFor="let trans of transItem.Transactions">
+        <div class="transaction-type">{{ TransactionType[trans.Type] }}</div>
+        <div class="amount-fee">
+          <div class="transaction-amount">Transaction £{{ trans.Amount }}</div>
+          <div class="transaction-fee">Fee £{{ trans.Amount }}</div>
+        </div>
       </div>
     </div>
   </div>
