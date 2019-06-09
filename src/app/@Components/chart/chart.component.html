@@ -1,6 +1,6 @@
 <div class="chart">
     <div class="chart__account_select">
-        <div class="chart__account_view" *ngFor="let account of GetUniqueBanks()">
+        <div class="chart__account_view" *ngFor="let account of getUniqueAccounts()" (click)="updateSelectedAccount(account)">
             {{account}}
         </div>
     </div>

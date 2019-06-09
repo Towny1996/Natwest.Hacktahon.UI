@@ -1,4 +1,4 @@
-<div class="transaction-container" *ngFor="let transItem of transactionItems">
+<div class="transaction-container" *ngFor="let transItem of GetTransactionItems()">
   <div
     (click)="showDay(transItem.Day)"
     class="transaction-day"
@@ -8,7 +8,7 @@
 
     <div class="transaction-amount">
       Transactions Amounted {{ transItem.Amount | currency:'GBP' }}
-      Fee Amount {{ GetFeeAmount(transItem.Transactions) | currency:'GBP' }}
+      Fee Amount {{ transItem.FeeAmount | currency:'GBP' }}
     </div>
 
     <div *ngIf="detailDays[transItem.Day]">
@@ -18,7 +18,7 @@
         </div>
         <div class="amount-fee">
           <div class="transaction-amount">Transaction £{{ trans.AMT }}</div>
-          <div class="transaction-fee">Fee {{ (trans.FeeType == 0 ? 0.50 : 0.70) | currency:'GBP' }}</div>
+          <div class="transaction-fee">Fee {{ trans.Fee | currency:'GBP' }}</div>
         </div>
       </div>
     </div>

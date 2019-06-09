@@ -2,7 +2,6 @@
   <nav></nav>
   <summary [timePeriod]="timePeriod" [summaryAmount]="summaryAmount"></summary>
   <chart
-    [Transactions]="mockData"
     (selectedFormat)="selectedFormat = $event"
   ></chart>
   <transactions [transactions]="mockData"></transactions>

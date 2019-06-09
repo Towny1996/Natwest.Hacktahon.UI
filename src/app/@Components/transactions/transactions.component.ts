@@ -4,16 +4,16 @@ import * as moment from "moment";
 import { TransactionItem } from "src/app/@Models/transaction-item.model";
 import { TransactionType } from "src/app/@Enums/transaction-type.enum";
 import { FeeType } from 'src/app/@Enums/fee-type.enum';
+import { DataService } from 'src/app/@Services/data.service';
 
 @Component({
   selector: "transactions",
   templateUrl: "./transactions.component.html",
-  styleUrls: ["./transactions.component.scss"]
+  styleUrls: ["./transactions.component.scss"],
 })
 export class TransactionsComponent implements OnInit {
   @Input() transactions: Transaction[];
   @Input() period: string;
-  transactionItems: TransactionItem[] = [];
   detailDays: object = {
     Monday: false,
     Tuesday: false,
@@ -27,36 +27,12 @@ export class TransactionsComponent implements OnInit {
   TransactionType = TransactionType;
   FeeType = FeeType;
 
-  createTransactionObject() {
-    let sevenDaysAgo = moment(new Date())
-      .subtract(7, "day")
-      .toDate();
+  public GetTransactionItems = () => { return this.dataService.transactionItems; }
 
-    while (sevenDaysAgo.getDate() !== new Date().getDate()) {
-      const item = new TransactionItem();
-
-      item.Day = moment(sevenDaysAgo).format("dddd");
-      item.Transactions = this.transactions.filter(
-        x => x.Date.getDate() == sevenDaysAgo.getDate()
-      );
-
-      item.Amount = item.Transactions.reduce((acc, currentValue) => {
-        return (acc += currentValue.AMT);
-      }, 0);
-
-      this.transactionItems.push(item);
-
-      sevenDaysAgo = moment(sevenDaysAgo)
-        .add(1, "day")
-        .toDate();
-    }
-
-    console.log(this.transactionItems);
+  constructor(private dataService: DataService) {
   }
 
-  ngOnInit() {
-    this.createTransactionObject();
-  }
+  ngOnInit() {}
 
   showDay(day) {
     this.detailDays[day] = !this.detailDays[day];
@@ -64,9 +40,5 @@ export class TransactionsComponent implements OnInit {
 
   formatDate(date) {
     return moment(date).format("dddd Do MMMM");
-  }
-
-  GetFeeAmount(transaction: Transaction[]) {
-    return transaction.reduce((curr, next) => curr += (next.FeeType === FeeType.TRF ? 0.50 : 0.70), 0)
   }
 }

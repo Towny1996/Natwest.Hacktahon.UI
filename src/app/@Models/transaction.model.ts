@@ -8,5 +8,5 @@ export class Transaction {
   FeeType: FeeType;
   Account: string;
   IsFee: boolean;
-  Fee: 5;
+  Fee: number;
 }
