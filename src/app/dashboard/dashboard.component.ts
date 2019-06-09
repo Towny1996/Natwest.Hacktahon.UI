@@ -131,10 +131,10 @@ export class DashboardComponent implements OnInit {
     this.crapData.forEach(x => {
       const tran = new Transaction;
       tran.Date = moment(x[0].toString()).toDate();
-      tran.PaymentType = ([1].toString() === "Dbit" ? TransactionType.Debit : TransactionType.Credit);
+      tran.PaymentType = ([1].toString().toLowerCase() === "dbit" ? TransactionType.Debit : TransactionType.Credit);
       tran.AMT = parseInt(x[2].toString());
       tran.FeeType = (x[3] === "TRF" ? FeeType.TRF : FeeType.IPO);
-      tran.Account = [4].toString();
+      tran.Account = x[4].toString();
 
       this.mockData.push(tran);
     });      
