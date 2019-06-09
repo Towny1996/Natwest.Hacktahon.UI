@@ -16,20 +16,20 @@ export class DashboardComponent implements OnInit {
   timePeriod: string = "week";
 
   crapData = [
-    ["2019-06-01T02:59:43.1Z", "Dbit",100.00, "TRF","Account1", false,""],
-    ["2019-06-01T02:59:43.1Z", "Dbit",100.00, "TRF","Account1", true,"FEE DR"],
+    ["2019-06-02T02:59:43.1Z", "Dbit",100.00, "TRF","Account1", false,""],
+    ["2019-06-02T02:59:43.1Z", "Dbit",100.00, "TRF","Account1", true,"FEE DR"],
 
-    ["2019-05-01T02:59:43.1Z", "CRDT",100.00, "TRF","Account1", false,"",""],
-    ["2019-05-01T02:59:43.1Z", "DBIT",100.00, "TRF","Account1", true,"FEE CR"],
+    ["2019-05-03T02:59:43.1Z", "CRDT",100.00, "TRF","Account1", false,"",""],
+    ["2019-05-03T02:59:43.1Z", "DBIT",100.00, "TRF","Account1", true,"FEE CR"],
 
-    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "IPO","Account1", false,""],
-    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "IPO","Account1", true,"FEE DR"],
+    ["2019-06-03T02:59:43.1Z", "DBIT",100.00, "IPO","Account1", false,""],
+    ["2019-06-03T02:59:43.1Z", "DBIT",100.00, "IPO","Account1", true,"FEE DR"],
 
     ["2019-05-01T02:59:43.1Z", "CRDT",100.00, "IPO","Account1", false,""],
     ["2019-05-01T02:59:43.1Z", "DBIT",100.00, "IPO","Account1", true,"FEE CR"],
 
-    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "PAY","Account1", false,""],
-    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "PAY","Account1", true,"FEE DR"],
+    ["2019-06-04T02:59:43.1Z", "DBIT",100.00, "PAY","Account1", false,""],
+    ["2019-06-04T02:59:43.1Z", "DBIT",100.00, "PAY","Account1", true,"FEE DR"],
 
     ["2019-05-01T02:59:43.1Z", "CRDT",100.00, "PAY","Account1", false,""],
     ["2019-05-01T02:59:43.1Z", "DBIT",100.00, "PAY","Account1", true,"FEE CR"],
@@ -37,36 +37,36 @@ export class DashboardComponent implements OnInit {
     ["2019-05-01T02:59:43.1Z", "DBIT",100.00, "1855","Account1", false,""],
     ["2019-05-01T02:59:43.1Z", "DBIT",100.00, "1855","Account1", true,"FEE DR"],
 
-    ["2019-06-01T02:59:43.1Z", "CRDT",100.00, "1855","Account1", false,""],
-    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "1855","Account1", true,"FEE CR"],
+    ["2019-06-05T02:59:43.1Z", "CRDT",100.00, "1855","Account1", false,""],
+    ["2019-06-05T02:59:43.1Z", "DBIT",100.00, "1855","Account1", true,"FEE CR"],
 
     ["2019-05-01T02:59:43.1Z", "DBIT",100.00, "SPIT","Account1", false,""],
     ["2019-05-01T02:59:43.1Z", "DBIT",100.00, "SPIT","Account1", true,"FEE DR"],
 
-    ["2019-05-01T02:59:43.1Z", "CRDT",100.00, "SPIT","Account1", false,""],
-    ["2019-05-01T02:59:43.1Z", "DBIT",100.00, "SPIT","Account1", true,"FEE CR"],
+    ["2019-05-06T02:59:43.1Z", "CRDT",100.00, "SPIT","Account1", false,""],
+    ["2019-05-06T02:59:43.1Z", "DBIT",100.00, "SPIT","Account1", true,"FEE CR"],
 
-    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "MMD","Account1", false,""],
-    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "MMD","Account1", true,"FEE DR"],
+    ["2019-06-06T02:59:43.1Z", "DBIT",100.00, "MMD","Account1", false,""],
+    ["2019-06-06T02:59:43.1Z", "DBIT",100.00, "MMD","Account1", true,"FEE DR"],
 
-    ["2019-06-01T02:59:43.1Z", "CRDT",100.00, "MMD","Account1", false,""],
-    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "MMD","Account1", true,"FEE CR"],
+    ["2019-06-07T02:59:43.1Z", "CRDT",100.00, "MMD","Account1", false,""],
+    ["2019-06-07T02:59:43.1Z", "DBIT",100.00, "MMD","Account1", true,"FEE CR"],
 
-    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "SPIN","Account1", false,""],
-    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "SPIN","Account1", true,"FEE DR"],
+    ["2019-06-08T02:59:43.1Z", "DBIT",100.00, "SPIN","Account1", false,""],
+    ["2019-06-08T02:59:43.1Z", "DBIT",100.00, "SPIN","Account1", true,"FEE DR"],
 
-    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "SPIN","Account1", false,""],
-    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "SPIN","Account1", true,"FEE CR"],
+    ["2019-06-09T02:59:43.1Z", "DBIT",100.00, "SPIN","Account1", false,""],
+    ["2019-06-09T02:59:43.1Z", "DBIT",100.00, "SPIN","Account1", true,"FEE CR"],
 
     ["2019-05-01T02:59:43.1Z", "DBIT",100.00, "SPOU","Account1", false,""],
     ["2019-05-01T02:59:43.1Z", "DBIT",100.00, "SPOU","Account1", true,"FEE DR"],
 
-    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "SPOU","Account1", false,""],
-    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "SPOU","Account1", true,"FEE CR"],
+    ["2019-06-03T02:59:43.1Z", "DBIT",100.00, "SPOU","Account1", false,""],
+    ["2019-06-02T02:59:43.1Z", "DBIT",100.00, "SPOU","Account1", true,"FEE CR"],
 
-    ["2019-06-01T02:59:43.1Z", "DBIT",8.00, "","Account1", true,"A/C FEE"],
-    ["2019-06-01T02:59:43.1Z", "DBIT",44.17, "","Account1", true,"INT CR"],
-    ["2019-06-01T02:59:43.1Z", "DBIT",160.71, "","Account1", true,"INT DR"],
+    ["2019-06-04T02:59:43.1Z", "DBIT",8.00, "","Account1", true,"A/C FEE"],
+    ["2019-06-05T02:59:43.1Z", "DBIT",44.17, "","Account1", true,"INT CR"],
+    ["2019-06-02T02:59:43.1Z", "DBIT",160.71, "","Account1", true,"INT DR"],
 
     ["2019-05-01T02:59:43.1Z", "Dbit",100.00, "TRF","Account1", false,""],
     ["2019-05-01T02:59:43.1Z", "Dbit",100.00, "TRF","Account1", true,"FEE DR"],
@@ -74,11 +74,11 @@ export class DashboardComponent implements OnInit {
     ["2019-05-01T02:59:43.1Z", "CRDT",100.00, "TRF","Account2", false,"",""],
     ["2019-05-01T02:59:43.1Z", "DBIT",100.00, "TRF","Account2", true,"FEE CR"],
 
-    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "IPO","Account2", false,""],
-    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "IPO","Account2", true,"FEE DR"],
+    ["2019-06-05T02:59:43.1Z", "DBIT",100.00, "IPO","Account2", false,""],
+    ["2019-06-09T02:59:43.1Z", "DBIT",100.00, "IPO","Account2", true,"FEE DR"],
 
-    ["2019-06-01T02:59:43.1Z", "CRDT",100.00, "IPO","Account2", false,""],
-    ["2019-06-01T02:59:43.1Z", "DBIT",100.00, "IPO","Account2", true,"FEE CR"],
+    ["2019-06-08T02:59:43.1Z", "CRDT",100.00, "IPO","Account2", false,""],
+    ["2019-06-08T02:59:43.1Z", "DBIT",100.00, "IPO","Account2", true,"FEE CR"],
 
     ["2019-05-01T02:59:43.1Z", "DBIT",100.00, "PAY","Account2", false,""],
     ["2019-05-01T02:59:43.1Z", "DBIT",100.00, "PAY","Account2", true,"FEE DR"],
