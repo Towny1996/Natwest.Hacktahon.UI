@@ -14,7 +14,7 @@ export class CompareComponent implements OnInit {
   ngOnInit() {}
 
   constructor(private dataService: DataService) {
-    this.mockData = dataService.MapMockData();
+    this.mockData = this.dataService.MapMockData();
     dataService.GetTransactionItems(this.mockData);
   }
 

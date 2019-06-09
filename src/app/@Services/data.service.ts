@@ -10,365 +10,671 @@ import { TransactionItem } from "../@Models/transaction-item.model";
 })
 export class DataService {
   crapData = [
-    ["2019-06-02T02:59:43.1Z", "Dbit", 100.0, "TRF", "Account1", false, ""],
     [
       "2019-06-02T02:59:43.1Z",
       "Dbit",
       100.0,
       "TRF",
-      "Account1",
+      "Natwest Business Account",
+      false,
+      ""
+    ],
+    [
+      "2019-06-02T02:59:43.1Z",
+      "Dbit",
+      100.0,
+      "TRF",
+      "Natwest Business Account",
       true,
       "FEE DR"
     ],
 
-    ["2019-06-03T02:59:43.1Z", "CRDT", 100.0, "TRF", "Account1", false, "", ""],
+    [
+      "2019-06-03T02:59:43.1Z",
+      "CRDT",
+      100.0,
+      "TRF",
+      "Natwest Business Account",
+      false,
+      "",
+      ""
+    ],
     [
       "2019-06-03T02:59:43.1Z",
       "DBIT",
       100.0,
       "TRF",
-      "Account1",
+      "Natwest Business Account",
       true,
       "FEE CR"
     ],
 
-    ["2019-06-03T02:59:43.1Z", "DBIT", 100.0, "IPO", "Account1", false, ""],
     [
       "2019-06-03T02:59:43.1Z",
       "DBIT",
       100.0,
       "IPO",
-      "Account1",
+      "Natwest Business Account",
+      false,
+      ""
+    ],
+    [
+      "2019-06-03T02:59:43.1Z",
+      "DBIT",
+      100.0,
+      "IPO",
+      "Natwest Business Account",
       true,
       "FEE DR"
     ],
 
-    ["2019-06-01T02:59:43.1Z", "CRDT", 100.0, "IPO", "Account1", false, ""],
+    [
+      "2019-06-01T02:59:43.1Z",
+      "CRDT",
+      100.0,
+      "IPO",
+      "Natwest Business Account",
+      false,
+      ""
+    ],
     [
       "2019-06-01T02:59:43.1Z",
       "DBIT",
       100.0,
       "IPO",
-      "Account1",
+      "Natwest Business Account",
       true,
       "FEE CR"
     ],
 
-    ["2019-06-04T02:59:43.1Z", "DBIT", 100.0, "PAY", "Account1", false, ""],
     [
       "2019-06-04T02:59:43.1Z",
       "DBIT",
       100.0,
       "PAY",
-      "Account1",
+      "Natwest Business Account",
+      false,
+      ""
+    ],
+    [
+      "2019-06-04T02:59:43.1Z",
+      "DBIT",
+      100.0,
+      "PAY",
+      "Natwest Business Account",
       true,
       "FEE DR"
     ],
 
-    ["2019-06-01T02:59:43.1Z", "CRDT", 100.0, "PAY", "Account1", false, ""],
+    [
+      "2019-06-01T02:59:43.1Z",
+      "CRDT",
+      100.0,
+      "PAY",
+      "Natwest Business Account",
+      false,
+      ""
+    ],
     [
       "2019-06-01T02:59:43.1Z",
       "DBIT",
       100.0,
       "PAY",
-      "Account1",
+      "Natwest Business Account",
       true,
       "FEE CR"
     ],
 
-    ["2019-06-01T02:59:43.1Z", "DBIT", 100.0, "1855", "Account1", false, ""],
     [
       "2019-06-01T02:59:43.1Z",
       "DBIT",
       100.0,
       "1855",
-      "Account1",
+      "Natwest Business Account",
+      false,
+      ""
+    ],
+    [
+      "2019-06-01T02:59:43.1Z",
+      "DBIT",
+      100.0,
+      "1855",
+      "Natwest Business Account",
       true,
       "FEE DR"
     ],
 
-    ["2019-06-05T02:59:43.1Z", "CRDT", 100.0, "1855", "Account1", false, ""],
+    [
+      "2019-06-05T02:59:43.1Z",
+      "CRDT",
+      100.0,
+      "1855",
+      "Natwest Business Account",
+      false,
+      ""
+    ],
     [
       "2019-06-05T02:59:43.1Z",
       "DBIT",
       100.0,
       "1855",
-      "Account1",
+      "Natwest Business Account",
       true,
       "FEE CR"
     ],
 
-    ["2019-06-01T02:59:43.1Z", "DBIT", 100.0, "SPIT", "Account1", false, ""],
     [
       "2019-06-01T02:59:43.1Z",
       "DBIT",
       100.0,
       "SPIT",
-      "Account1",
+      "Natwest Business Account",
+      false,
+      ""
+    ],
+    [
+      "2019-06-01T02:59:43.1Z",
+      "DBIT",
+      100.0,
+      "SPIT",
+      "Natwest Business Account",
       true,
       "FEE DR"
     ],
 
-    ["2019-06-06T02:59:43.1Z", "CRDT", 100.0, "SPIT", "Account1", false, ""],
+    [
+      "2019-06-06T02:59:43.1Z",
+      "CRDT",
+      100.0,
+      "SPIT",
+      "Natwest Business Account",
+      false,
+      ""
+    ],
     [
       "2019-06-06T02:59:43.1Z",
       "DBIT",
       100.0,
       "SPIT",
-      "Account1",
+      "Natwest Business Account",
       true,
       "FEE CR"
     ],
 
-    ["2019-06-06T02:59:43.1Z", "DBIT", 100.0, "MMD", "Account1", false, ""],
     [
       "2019-06-06T02:59:43.1Z",
       "DBIT",
       100.0,
       "MMD",
-      "Account1",
+      "Natwest Business Account",
+      false,
+      ""
+    ],
+    [
+      "2019-06-06T02:59:43.1Z",
+      "DBIT",
+      100.0,
+      "MMD",
+      "Natwest Business Account",
       true,
       "FEE DR"
     ],
 
-    ["2019-06-07T02:59:43.1Z", "CRDT", 100.0, "MMD", "Account1", false, ""],
+    [
+      "2019-06-07T02:59:43.1Z",
+      "CRDT",
+      100.0,
+      "MMD",
+      "Natwest Business Account",
+      false,
+      ""
+    ],
     [
       "2019-06-07T02:59:43.1Z",
       "DBIT",
       100.0,
       "MMD",
-      "Account1",
+      "Natwest Business Account",
       true,
       "FEE CR"
     ],
 
-    ["2019-06-08T02:59:43.1Z", "DBIT", 100.0, "SPIN", "Account1", false, ""],
     [
       "2019-06-08T02:59:43.1Z",
       "DBIT",
       100.0,
       "SPIN",
-      "Account1",
+      "Natwest Business Account",
+      false,
+      ""
+    ],
+    [
+      "2019-06-08T02:59:43.1Z",
+      "DBIT",
+      100.0,
+      "SPIN",
+      "Natwest Business Account",
       true,
       "FEE DR"
     ],
 
-    ["2019-06-09T02:59:43.1Z", "DBIT", 100.0, "SPIN", "Account1", false, ""],
     [
       "2019-06-09T02:59:43.1Z",
       "DBIT",
       100.0,
       "SPIN",
-      "Account1",
+      "Natwest Business Account",
+      false,
+      ""
+    ],
+    [
+      "2019-06-09T02:59:43.1Z",
+      "DBIT",
+      100.0,
+      "SPIN",
+      "Natwest Business Account",
       true,
       "FEE CR"
     ],
 
-    ["2019-06-01T02:59:43.1Z", "DBIT", 100.0, "SPOU", "Account1", false, ""],
     [
       "2019-06-01T02:59:43.1Z",
       "DBIT",
       100.0,
       "SPOU",
-      "Account1",
+      "Natwest Business Account",
+      false,
+      ""
+    ],
+    [
+      "2019-06-01T02:59:43.1Z",
+      "DBIT",
+      100.0,
+      "SPOU",
+      "Natwest Business Account",
       true,
       "FEE DR"
     ],
 
-    ["2019-06-03T02:59:43.1Z", "DBIT", 100.0, "SPOU", "Account1", false, ""],
+    [
+      "2019-06-03T02:59:43.1Z",
+      "DBIT",
+      100.0,
+      "SPOU",
+      "Natwest Business Account",
+      false,
+      ""
+    ],
     [
       "2019-06-02T02:59:43.1Z",
       "DBIT",
       100.0,
       "SPOU",
-      "Account1",
+      "Natwest Business Account",
       true,
       "FEE CR"
     ],
 
-    ["2019-06-04T02:59:43.1Z", "DBIT", 8.0, "", "Account1", true, "A/C FEE"],
-    ["2019-06-05T02:59:43.1Z", "DBIT", 44.17, "", "Account1", true, "INT CR"],
-    ["2019-06-02T02:59:43.1Z", "DBIT", 160.71, "", "Account1", true, "INT DR"],
+    [
+      "2019-06-04T02:59:43.1Z",
+      "DBIT",
+      8.0,
+      "",
+      "Natwest Business Account",
+      true,
+      "A/C FEE"
+    ],
+    [
+      "2019-06-05T02:59:43.1Z",
+      "DBIT",
+      44.17,
+      "",
+      "Natwest Business Account",
+      true,
+      "INT CR"
+    ],
+    [
+      "2019-06-02T02:59:43.1Z",
+      "DBIT",
+      160.71,
+      "",
+      "Natwest Business Account",
+      true,
+      "INT DR"
+    ],
 
-    ["2019-06-01T02:59:43.1Z", "Dbit", 100.0, "TRF", "Account1", false, ""],
     [
       "2019-06-01T02:59:43.1Z",
       "Dbit",
       100.0,
       "TRF",
-      "Account1",
+      "Natwest Business Account",
+      false,
+      ""
+    ],
+    [
+      "2019-06-01T02:59:43.1Z",
+      "Dbit",
+      100.0,
+      "TRF",
+      "Natwest Business Account",
       true,
       "FEE DR"
     ],
 
-    ["2019-06-01T02:59:43.1Z", "CRDT", 100.0, "TRF", "Account2", false, "", ""],
+    [
+      "2019-06-01T02:59:43.1Z",
+      "CRDT",
+      100.0,
+      "TRF",
+      "Premium Account",
+      false,
+      "",
+      ""
+    ],
     [
       "2019-06-01T02:59:43.1Z",
       "DBIT",
       100.0,
       "TRF",
-      "Account2",
+      "Premium Account",
       true,
       "FEE CR"
     ],
 
-    ["2019-06-05T02:59:43.1Z", "DBIT", 100.0, "IPO", "Account2", false, ""],
+    [
+      "2019-06-05T02:59:43.1Z",
+      "DBIT",
+      100.0,
+      "IPO",
+      "Premium Account",
+      false,
+      ""
+    ],
     [
       "2019-06-09T02:59:43.1Z",
       "DBIT",
       100.0,
       "IPO",
-      "Account2",
+      "Premium Account",
       true,
       "FEE DR"
     ],
 
-    ["2019-06-08T02:59:43.1Z", "CRDT", 100.0, "IPO", "Account2", false, ""],
+    [
+      "2019-06-08T02:59:43.1Z",
+      "CRDT",
+      100.0,
+      "IPO",
+      "Premium Account",
+      false,
+      ""
+    ],
     [
       "2019-06-08T02:59:43.1Z",
       "DBIT",
       100.0,
       "IPO",
-      "Account2",
+      "Premium Account",
       true,
       "FEE CR"
     ],
 
-    ["2019-06-01T02:59:43.1Z", "DBIT", 100.0, "PAY", "Account2", false, ""],
     [
       "2019-06-01T02:59:43.1Z",
       "DBIT",
       100.0,
       "PAY",
-      "Account2",
-      true,
-      "FEE DR"
+      "Premium Account",
+      false,
+      ""
     ],
-
-    ["2019-06-01T02:59:43.1Z", "CRDT", 100.0, "PAY", "Account2", false, ""],
     [
       "2019-06-01T02:59:43.1Z",
       "DBIT",
       100.0,
       "PAY",
-      "Account2",
+      "Premium Account",
+      true,
+      "FEE DR"
+    ],
+
+    [
+      "2019-06-01T02:59:43.1Z",
+      "CRDT",
+      100.0,
+      "PAY",
+      "Premium Account",
+      false,
+      ""
+    ],
+    [
+      "2019-06-01T02:59:43.1Z",
+      "DBIT",
+      100.0,
+      "PAY",
+      "Premium Account",
       true,
       "FEE CR"
     ],
 
-    ["2019-06-03T02:59:43.1Z", "DBIT", 100.0, "1855", "Account2", false, ""],
+    [
+      "2019-06-03T02:59:43.1Z",
+      "DBIT",
+      100.0,
+      "1855",
+      "Premium Account",
+      false,
+      ""
+    ],
     [
       "2019-06-01T02:59:43.1Z",
       "DBIT",
       100.0,
       "1855",
-      "Account2",
+      "Premium Account",
       true,
       "FEE DR"
     ],
 
-    ["2019-06-01T02:59:43.1Z", "CRDT", 100.0, "1855", "Account2", false, ""],
+    [
+      "2019-06-01T02:59:43.1Z",
+      "CRDT",
+      100.0,
+      "1855",
+      "Premium Account",
+      false,
+      ""
+    ],
     [
       "2019-06-01T02:59:43.1Z",
       "DBIT",
       100.0,
       "1855",
-      "Account2",
+      "Premium Account",
       true,
       "FEE CR"
     ],
 
-    ["2019-06-01T02:59:43.1Z", "DBIT", 100.0, "SPIT", "Account2", false, ""],
     [
       "2019-06-01T02:59:43.1Z",
       "DBIT",
       100.0,
       "SPIT",
-      "Account2",
-      true,
-      "FEE DR"
+      "Premium Account",
+      false,
+      ""
     ],
-
-    ["2019-06-01T02:59:43.1Z", "CRDT", 100.0, "SPIT", "Account2", false, ""],
     [
       "2019-06-01T02:59:43.1Z",
       "DBIT",
       100.0,
       "SPIT",
-      "Account2",
+      "Premium Account",
+      true,
+      "FEE DR"
+    ],
+
+    [
+      "2019-06-01T02:59:43.1Z",
+      "CRDT",
+      100.0,
+      "SPIT",
+      "Premium Account",
+      false,
+      ""
+    ],
+    [
+      "2019-06-01T02:59:43.1Z",
+      "DBIT",
+      100.0,
+      "SPIT",
+      "Premium Account",
       true,
       "FEE CR"
     ],
 
-    ["2019-06-01T02:59:43.1Z", "DBIT", 100.0, "MMD", "Account2", false, ""],
     [
       "2019-06-01T02:59:43.1Z",
       "DBIT",
       100.0,
       "MMD",
-      "Account2",
-      true,
-      "FEE DR"
+      "Premium Account",
+      false,
+      ""
     ],
-
-    ["2019-06-01T02:59:43.1Z", "CRDT", 100.0, "MMD", "Account2", false, ""],
     [
       "2019-06-01T02:59:43.1Z",
       "DBIT",
       100.0,
       "MMD",
-      "Account2",
+      "Premium Account",
+      true,
+      "FEE DR"
+    ],
+
+    [
+      "2019-06-01T02:59:43.1Z",
+      "CRDT",
+      100.0,
+      "MMD",
+      "Premium Account",
+      false,
+      ""
+    ],
+    [
+      "2019-06-01T02:59:43.1Z",
+      "DBIT",
+      100.0,
+      "MMD",
+      "Premium Account",
       true,
       "FEE CR"
     ],
 
-    ["2019-06-01T02:59:43.1Z", "DBIT", 100.0, "SPIN", "Account2", false, ""],
     [
       "2019-06-01T02:59:43.1Z",
       "DBIT",
       100.0,
       "SPIN",
-      "Account2",
-      true,
-      "FEE DR"
+      "Premium Account",
+      false,
+      ""
     ],
-
-    ["2019-06-01T02:59:43.1Z", "DBIT", 100.0, "SPIN", "Account2", false, ""],
     [
       "2019-06-01T02:59:43.1Z",
       "DBIT",
       100.0,
       "SPIN",
-      "Account2",
-      true,
-      "FEE CR"
-    ],
-
-    ["2019-06-01T02:59:43.1Z", "DBIT", 100.0, "SPOU", "Account2", false, ""],
-    [
-      "2019-06-01T02:59:43.1Z",
-      "DBIT",
-      100.0,
-      "SPOU",
-      "Account2",
+      "Premium Account",
       true,
       "FEE DR"
     ],
 
-    ["2019-06-01T02:59:43.1Z", "DBIT", 100.0, "SPOU", "Account2", false, ""],
+    [
+      "2019-06-01T02:59:43.1Z",
+      "DBIT",
+      100.0,
+      "SPIN",
+      "Premium Account",
+      false,
+      ""
+    ],
+    [
+      "2019-06-01T02:59:43.1Z",
+      "DBIT",
+      100.0,
+      "SPIN",
+      "Premium Account",
+      true,
+      "FEE CR"
+    ],
+
     [
       "2019-06-01T02:59:43.1Z",
       "DBIT",
       100.0,
       "SPOU",
-      "Account2",
+      "Premium Account",
+      false,
+      ""
+    ],
+    [
+      "2019-06-01T02:59:43.1Z",
+      "DBIT",
+      100.0,
+      "SPOU",
+      "Premium Account",
+      true,
+      "FEE DR"
+    ],
+
+    [
+      "2019-06-01T02:59:43.1Z",
+      "DBIT",
+      100.0,
+      "SPOU",
+      "Premium Account",
+      false,
+      ""
+    ],
+    [
+      "2019-06-01T02:59:43.1Z",
+      "DBIT",
+      100.0,
+      "SPOU",
+      "Premium Account",
       true,
       "FEE CR"
     ],
 
-    ["2019-06-01T02:59:43.1Z", "DBIT", 12.0, "", "Account2", true, "A/C FEE"],
-    ["2019-06-01T02:59:43.1Z", "DBIT", 17.17, "", "Account2", true, "INT CR"],
-    ["2019-06-01T02:59:43.1Z", "DBIT", 19.71, "", "Account2", true, "INT DR"]
+    [
+      "2019-06-01T02:59:43.1Z",
+      "DBIT",
+      12.0,
+      "",
+      "Premium Account",
+      true,
+      "A/C FEE"
+    ],
+    [
+      "2019-06-01T02:59:43.1Z",
+      "DBIT",
+      17.17,
+      "",
+      "Premium Account",
+      true,
+      "INT CR"
+    ],
+    [
+      "2019-06-01T02:59:43.1Z",
+      "DBIT",
+      19.71,
+      "",
+      "Premium Account",
+      true,
+      "INT DR"
+    ]
   ];
 
   mockData: Transaction[] = [];
