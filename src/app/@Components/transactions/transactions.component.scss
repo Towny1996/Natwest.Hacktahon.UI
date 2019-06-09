@@ -5,10 +5,12 @@
     margin: auto;
 
     .transaction-row {
+      width: 95%;
+      float: right;
       display: grid;
       grid-template-columns: 2fr 1fr;
 
-      border-bottom: 2px solid blue;
+      border: 2px solid blue;
 
       .transaction-type {
       }

@@ -4,9 +4,12 @@
     class="transaction-day"
     *ngIf="transItem.Amount"
   >
-    {{ formatDate(transItem.Transactions[0].Date) }} Transaction Amounted £{{
-      transItem.Amount
-    }}
+    {{ formatDate(transItem.Transactions[0].Date) }}
+
+    <div class="transaction-amount">
+      Transactions Amounted £{{ transItem.Amount }}
+    </div>
+
     <div *ngIf="detailDays[transItem.Day]">
       <div class="transaction-row" *ngFor="let trans of transItem.Transactions">
         <div class="transaction-type">

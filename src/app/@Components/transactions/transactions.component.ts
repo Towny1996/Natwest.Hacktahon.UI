@@ -47,6 +47,8 @@ export class TransactionsComponent implements OnInit {
         .add(1, "day")
         .toDate();
     }
+
+    console.log(this.transactionItems);
   }
 
   ngOnInit() {
