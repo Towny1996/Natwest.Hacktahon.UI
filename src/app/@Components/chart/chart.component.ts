@@ -56,7 +56,7 @@ export class ChartComponent implements OnInit {
 
   getChartData() {
     this.chartData = [];
-    
+
     const data = new ChartData;
     data.data = [];
     data.label = this.GetSelectedAccount();
@@ -72,7 +72,10 @@ export class ChartComponent implements OnInit {
   }
 
   getUniqueAccounts() {
-    return [...new Set(this.dataService.mockData.map(x => x.Account))];
+    const unique = [...new Set(this.dataService.mockData.map(x => x.Account))];
+    unique.push("Overall");
+
+    return unique;
   }
 
   updateSelectedAccount(account) {

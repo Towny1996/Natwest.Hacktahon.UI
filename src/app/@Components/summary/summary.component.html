@@ -4,11 +4,11 @@
 
   <div class="summary-amount">
     <span class="summary-label">Transactions: </span>
-    <span class="amount-good"> {{ summaryAmount }}</span>
+    <span class="amount-good"> {{ GetSummary() | currency:'GBP' }}</span>
   </div>
   <div class="summary-amount">
     <span class="summary-label">Fees: </span>
-    <span class="amount-bad">{{ summaryAmount }}</span>
+    <span class="amount-bad">{{ GetFeesAmount() | currency:'GBP' }}</span>
   </div>
   <button class="summary-compare" routerLink="../compare">Compare</button>
 </div>

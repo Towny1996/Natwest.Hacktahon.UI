@@ -310,9 +310,16 @@ export class DataService {
       const item = new TransactionItem();
 
       item.Day = moment(sevenDaysAgo).format("dddd");
-      item.Transactions = transactions.filter(
-        x => (x.Date.getDate() == sevenDaysAgo.getDate()) && x.Account === this.selectedAccount
-      );
+
+      if (this.selectedAccount === "Overall") {
+        item.Transactions = transactions.filter(
+          x => (x.Date.getDate() == sevenDaysAgo.getDate())
+        );  
+      } else {
+        item.Transactions = transactions.filter(
+          x => (x.Date.getDate() == sevenDaysAgo.getDate()) && x.Account === this.selectedAccount
+        );  
+      }
 
       item.Amount = item.Transactions.reduce((acc, currentValue) => {
         return (acc += currentValue.AMT);
