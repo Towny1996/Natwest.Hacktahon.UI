@@ -21,9 +21,9 @@ export class DataService {
       "FEE DR"
     ],
 
-    ["2019-05-03T02:59:43.1Z", "CRDT", 100.0, "TRF", "Account1", false, "", ""],
+    ["2019-06-03T02:59:43.1Z", "CRDT", 100.0, "TRF", "Account1", false, "", ""],
     [
-      "2019-05-03T02:59:43.1Z",
+      "2019-06-03T02:59:43.1Z",
       "DBIT",
       100.0,
       "TRF",
@@ -43,9 +43,9 @@ export class DataService {
       "FEE DR"
     ],
 
-    ["2019-05-01T02:59:43.1Z", "CRDT", 100.0, "IPO", "Account1", false, ""],
+    ["2019-06-01T02:59:43.1Z", "CRDT", 100.0, "IPO", "Account1", false, ""],
     [
-      "2019-05-01T02:59:43.1Z",
+      "2019-06-01T02:59:43.1Z",
       "DBIT",
       100.0,
       "IPO",
@@ -65,9 +65,9 @@ export class DataService {
       "FEE DR"
     ],
 
-    ["2019-05-01T02:59:43.1Z", "CRDT", 100.0, "PAY", "Account1", false, ""],
+    ["2019-06-01T02:59:43.1Z", "CRDT", 100.0, "PAY", "Account1", false, ""],
     [
-      "2019-05-01T02:59:43.1Z",
+      "2019-06-01T02:59:43.1Z",
       "DBIT",
       100.0,
       "PAY",
@@ -76,9 +76,9 @@ export class DataService {
       "FEE CR"
     ],
 
-    ["2019-05-01T02:59:43.1Z", "DBIT", 100.0, "1855", "Account1", false, ""],
+    ["2019-06-01T02:59:43.1Z", "DBIT", 100.0, "1855", "Account1", false, ""],
     [
-      "2019-05-01T02:59:43.1Z",
+      "2019-06-01T02:59:43.1Z",
       "DBIT",
       100.0,
       "1855",
@@ -98,9 +98,9 @@ export class DataService {
       "FEE CR"
     ],
 
-    ["2019-05-01T02:59:43.1Z", "DBIT", 100.0, "SPIT", "Account1", false, ""],
+    ["2019-06-01T02:59:43.1Z", "DBIT", 100.0, "SPIT", "Account1", false, ""],
     [
-      "2019-05-01T02:59:43.1Z",
+      "2019-06-01T02:59:43.1Z",
       "DBIT",
       100.0,
       "SPIT",
@@ -109,9 +109,9 @@ export class DataService {
       "FEE DR"
     ],
 
-    ["2019-05-06T02:59:43.1Z", "CRDT", 100.0, "SPIT", "Account1", false, ""],
+    ["2019-06-06T02:59:43.1Z", "CRDT", 100.0, "SPIT", "Account1", false, ""],
     [
-      "2019-05-06T02:59:43.1Z",
+      "2019-06-06T02:59:43.1Z",
       "DBIT",
       100.0,
       "SPIT",
@@ -164,9 +164,9 @@ export class DataService {
       "FEE CR"
     ],
 
-    ["2019-05-01T02:59:43.1Z", "DBIT", 100.0, "SPOU", "Account1", false, ""],
+    ["2019-06-01T02:59:43.1Z", "DBIT", 100.0, "SPOU", "Account1", false, ""],
     [
-      "2019-05-01T02:59:43.1Z",
+      "2019-06-01T02:59:43.1Z",
       "DBIT",
       100.0,
       "SPOU",
@@ -190,9 +190,9 @@ export class DataService {
     ["2019-06-05T02:59:43.1Z", "DBIT", 44.17, "", "Account1", true, "INT CR"],
     ["2019-06-02T02:59:43.1Z", "DBIT", 160.71, "", "Account1", true, "INT DR"],
 
-    ["2019-05-01T02:59:43.1Z", "Dbit", 100.0, "TRF", "Account1", false, ""],
+    ["2019-06-01T02:59:43.1Z", "Dbit", 100.0, "TRF", "Account1", false, ""],
     [
-      "2019-05-01T02:59:43.1Z",
+      "2019-06-01T02:59:43.1Z",
       "Dbit",
       100.0,
       "TRF",
@@ -201,9 +201,9 @@ export class DataService {
       "FEE DR"
     ],
 
-    ["2019-05-01T02:59:43.1Z", "CRDT", 100.0, "TRF", "Account2", false, "", ""],
+    ["2019-06-01T02:59:43.1Z", "CRDT", 100.0, "TRF", "Account2", false, "", ""],
     [
-      "2019-05-01T02:59:43.1Z",
+      "2019-06-01T02:59:43.1Z",
       "DBIT",
       100.0,
       "TRF",
@@ -234,9 +234,9 @@ export class DataService {
       "FEE CR"
     ],
 
-    ["2019-05-01T02:59:43.1Z", "DBIT", 100.0, "PAY", "Account2", false, ""],
+    ["2019-06-01T02:59:43.1Z", "DBIT", 100.0, "PAY", "Account2", false, ""],
     [
-      "2019-05-01T02:59:43.1Z",
+      "2019-06-01T02:59:43.1Z",
       "DBIT",
       100.0,
       "PAY",
@@ -258,7 +258,7 @@ export class DataService {
 
     ["2019-06-03T02:59:43.1Z", "DBIT", 100.0, "1855", "Account2", false, ""],
     [
-      "2019-05-01T02:59:43.1Z",
+      "2019-06-01T02:59:43.1Z",
       "DBIT",
       100.0,
       "1855",
@@ -289,9 +289,9 @@ export class DataService {
       "FEE DR"
     ],
 
-    ["2019-05-01T02:59:43.1Z", "CRDT", 100.0, "SPIT", "Account2", false, ""],
+    ["2019-06-01T02:59:43.1Z", "CRDT", 100.0, "SPIT", "Account2", false, ""],
     [
-      "2019-05-01T02:59:43.1Z",
+      "2019-06-01T02:59:43.1Z",
       "DBIT",
       100.0,
       "SPIT",
@@ -311,9 +311,9 @@ export class DataService {
       "FEE DR"
     ],
 
-    ["2019-05-01T02:59:43.1Z", "CRDT", 100.0, "MMD", "Account2", false, ""],
+    ["2019-06-01T02:59:43.1Z", "CRDT", 100.0, "MMD", "Account2", false, ""],
     [
-      "2019-05-01T02:59:43.1Z",
+      "2019-06-01T02:59:43.1Z",
       "DBIT",
       100.0,
       "MMD",
@@ -355,9 +355,9 @@ export class DataService {
       "FEE DR"
     ],
 
-    ["2019-05-01T02:59:43.1Z", "DBIT", 100.0, "SPOU", "Account2", false, ""],
+    ["2019-06-01T02:59:43.1Z", "DBIT", 100.0, "SPOU", "Account2", false, ""],
     [
-      "2019-05-01T02:59:43.1Z",
+      "2019-06-01T02:59:43.1Z",
       "DBIT",
       100.0,
       "SPOU",
@@ -417,12 +417,14 @@ export class DataService {
 
       if (this.selectedAccount === "Overall") {
         item.Transactions = transactions.filter(
-          x => (x.Date.getDate() == sevenDaysAgo.getDate())
-        );  
+          x => x.Date.getDate() == sevenDaysAgo.getDate()
+        );
       } else {
         item.Transactions = transactions.filter(
-          x => (x.Date.getDate() == sevenDaysAgo.getDate()) && x.Account === this.selectedAccount
-        );  
+          x =>
+            x.Date.getDate() == sevenDaysAgo.getDate() &&
+            x.Account === this.selectedAccount
+        );
       }
 
       item.Amount = item.Transactions.reduce((acc, currentValue) => {
