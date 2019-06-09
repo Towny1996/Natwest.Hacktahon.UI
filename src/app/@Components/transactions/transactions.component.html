@@ -1,16 +1,17 @@
-<div class="transaction-container" *ngFor="let transItem of GetTransactionItems()">
+<div
+  class="transaction-container"
+  *ngFor="let transItem of GetTransactionItems()"
+>
   <div
     (click)="showDay(transItem.Day)"
     class="transaction-day"
     *ngIf="transItem.Amount"
   >
     {{ formatDate(transItem.Transactions[0].Date) }}
-
     <div class="transaction-amount">
-      Transactions Amounted {{ transItem.Amount | currency:'GBP' }}
-      Fee Amount {{ transItem.FeeAmount | currency:'GBP' }}
+      Transactions Amounted {{ transItem.Amount | currency: "GBP" }} Fee Amount
+      {{ transItem.FeeAmount | currency: "GBP" }}
     </div>
-
     <div *ngIf="detailDays[transItem.Day]">
       <div class="transaction-row" *ngFor="let trans of transItem.Transactions">
         <div class="transaction-type">
@@ -18,7 +19,10 @@
         </div>
         <div class="amount-fee">
           <div class="transaction-amount">Transaction £{{ trans.AMT }}</div>
-          <div class="transaction-fee">Fee {{ trans.Fee | currency:'GBP' }}</div>
+          <div class="transaction-fee">
+            {{ trans.FeeType ? "TRF" : "IPO" }} - Fee
+            {{ trans.Fee | currency: "GBP" }}
+          </div>
         </div>
       </div>
     </div>
