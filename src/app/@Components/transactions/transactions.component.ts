@@ -3,6 +3,7 @@ import { Transaction } from "src/app/@Models/transaction.model";
 import * as moment from "moment";
 import { TransactionItem } from "src/app/@Models/transaction-item.model";
 import { TransactionType } from "src/app/@Enums/transaction-type.enum";
+import { FeeType } from 'src/app/@Enums/fee-type.enum';
 
 @Component({
   selector: "transactions",
@@ -22,7 +23,9 @@ export class TransactionsComponent implements OnInit {
     Saturday: false,
     Sunday: false
   };
+
   TransactionType = TransactionType;
+  FeeType = FeeType;
 
   createTransactionObject() {
     let sevenDaysAgo = moment(new Date())
@@ -61,5 +64,9 @@ export class TransactionsComponent implements OnInit {
 
   formatDate(date) {
     return moment(date).format("dddd Do MMMM");
+  }
+
+  GetFeeAmount(transaction: Transaction[]) {
+    return transaction.reduce((curr, next) => curr += (next.FeeType === FeeType.TRF ? 0.50 : 0.70), 0)
   }
 }
