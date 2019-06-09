@@ -9,7 +9,7 @@
   >
     {{ formatDate(transItem.Transactions[0].Date) }}
     <div class="transaction-amount">
-      Transactions Amounted {{ transItem.Amount | currency: "GBP" }} Fee Amount
+      Transaction Amounts {{ transItem.Amount | currency: "GBP" }}; Fees
       {{ transItem.FeeAmount | currency: "GBP" }}
     </div>
     <div *ngIf="detailDays[transItem.Day]">

@@ -1,22 +1,28 @@
-.chart{
-    margin-top: 70px;
+.chart {
+  margin-top: 70px;
 
-    &__holder {
-        display: block; 
-        width: 40%; 
-        margin: auto; 
-    }
+  &__holder {
+    display: block;
+    width: 40%;
+    margin: auto;
+  }
 
-    &__account_select {
-        width: 40%;
-        margin: auto;
-        background-color: #5da9e9;
-        color: white;
-        padding: 10px;
-    }
+  &__account_select {
+    width: 40%;
+    margin: auto;
+    background-color: #5da9e9;
+    color: white;
+    padding: 10px;
+  }
 
-    &__account_view {
-        display: inline-block;
-        padding-right: 10px;
-    }
+  &__account_view {
+    display: inline-block;
+    padding-right: 10px;
+  }
+
+  &__account_view:hover {
+    color: lightgray;
+    transition: color 0.5s ease-out;
+    cursor: pointer;
+  }
 }

@@ -1,15 +1,12 @@
-import { Component, OnInit, ModuleWithComponentFactories } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { Transaction } from "../@Models/transaction.model";
 import { ChartFilterType } from "../@Enums/chart-filter-type.enum";
-import { FeeType } from "../@Enums/fee-type.enum";
-import { TransactionType } from "../@Enums/transaction-type.enum";
-import { DataService } from '../@Services/data.service';
+import { DataService } from "../@Services/data.service";
 
 @Component({
   selector: "app-dashboard",
   templateUrl: "./dashboard.component.html",
-  styleUrls: ["./dashboard.component.scss"],
-  providers: [DataService]
+  styleUrls: ["./dashboard.component.scss"]
 })
 export class DashboardComponent implements OnInit {
   selectedFormat: ChartFilterType;
@@ -24,5 +21,4 @@ export class DashboardComponent implements OnInit {
   }
 
   ngOnInit() {}
-
 }
