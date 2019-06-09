@@ -3,13 +3,13 @@ import { Transaction } from "src/app/@Models/transaction.model";
 import * as moment from "moment";
 import { TransactionItem } from "src/app/@Models/transaction-item.model";
 import { TransactionType } from "src/app/@Enums/transaction-type.enum";
-import { FeeType } from 'src/app/@Enums/fee-type.enum';
-import { DataService } from 'src/app/@Services/data.service';
+import { FeeType } from "src/app/@Enums/fee-type.enum";
+import { DataService } from "src/app/@Services/data.service";
 
 @Component({
   selector: "transactions",
   templateUrl: "./transactions.component.html",
-  styleUrls: ["./transactions.component.scss"],
+  styleUrls: ["./transactions.component.scss"]
 })
 export class TransactionsComponent implements OnInit {
   @Input() transactions: Transaction[];
@@ -27,12 +27,15 @@ export class TransactionsComponent implements OnInit {
   TransactionType = TransactionType;
   FeeType = FeeType;
 
-  public GetTransactionItems = () => { return this.dataService.transactionItems; }
+  public GetTransactionItems = () => {
+    return this.dataService.transactionItems;
+  };
 
-  constructor(private dataService: DataService) {
+  constructor(private dataService: DataService) {}
+
+  ngOnInit() {
+    console.log(this.transactions);
   }
-
-  ngOnInit() {}
 
   showDay(day) {
     this.detailDays[day] = !this.detailDays[day];
